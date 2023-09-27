@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 8080;
 const postgre = require("./database");
 
 app.get("/", (req, res) => {
-  res.send("Simple API homepage");
+  return res.send("Simple API homepage");
 });
 
 app.get("/", async (req, res) => {
