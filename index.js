@@ -16,9 +16,9 @@ app.use(express.urlencoded({ extended: false }));
 const PORT = process.env.PORT || 8080;
 const postgre = require("./database");
 
-app.get("/", (req, res) => {
-  return res.status(200).send("Simple API homepage");
-});
+// app.get("/", (req, res) => {
+//   return res.status(200).send("Simple API homepage");
+// });
 
 app.get("/", async (req, res) => {
   try {
